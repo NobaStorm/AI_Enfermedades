@@ -89,6 +89,20 @@ function calcPorcentaje() {
 
     limpiarResultados();
     validar = document.querySelectorAll('.valores');
+    var allZero = 0;
+    //Validar que hay opciones seleccionadas
+    validar.forEach(e => {
+        if (e.checked == true) {
+            allZero = allZero + 1;
+        }
+
+    });
+    if (allZero === 0) {
+        alertNodata();
+        console.log(porcentaje)
+    }
+
+    //Obtener resultados
     validar.forEach(e => {
         if (e.checked == true) {
             var a = parseInt((porcentajes[e.value] * 100) / enferm[e.value]);
@@ -97,12 +111,9 @@ function calcPorcentaje() {
         }
     });
 
-    porcentaje = porcentaje.filter(x => x > 0);
+    modalInfo();
 
-    if (porcentaje.length === 0) {
-        alertNodata();
-        console.log(porcentaje)
-    }
+
 }
 
 function limpiarResultados() {
@@ -141,28 +152,40 @@ function modalInfo() {
 
     var targetDiv = document.getElementById('result');
     targetDiv.insertAdjacentHTML('beforeend', `
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Para Saber más!!
+    <!-- Button trigger modal -->
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        ¿Confundido? Presioname!!
         </button>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Información Sobre Resultados</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p>En el resultado detallado usted podra ver el Nombre de las Enfermedades con las que comparamos su resultado, debajo del nombre,
+          usted podra notar una pequeña barra la cual contendrá un porcentaje, este porcentaje es el nivel de coincidencía de los sintomas
+          que usted selecciono en la ventana de DIAGNOSTICO.</p>
+            
 
-        <!-- Modal -->
-        <div class="modal fade " id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">${enferm}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            ${recomendacion}
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-            </div>
+            <p>Es importante mencionar que al ver un porcentaje en una enfermedad no significa que usted la tenga, solo debe poner atención
+            en los porcentajes por arriba del 85%, ya que es donde más coincidencías tiene con sus sintomas y donde la probabilidad de
+            tener la enfermedad es más alta.</p>
+            
+            <p>NOTA: Si usted ve la enfermedad,pero la barra por debajo no tiene ningún porcentaje ni nota alguna porción en color azul
+             es debido a que la Coincidencia es del 0%, es decir, no cuenta con sintomas que coincidan con la enfermedad. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
         </div>
-        </div>`);
+      </div>
+    </div>`);
 
 }
 

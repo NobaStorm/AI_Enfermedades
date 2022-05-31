@@ -6,6 +6,7 @@ var prueba;
 var result = []
 
 function init() {
+    localStorage.clear();
 
     document.querySelector('.btn-primary').addEventListener('click', respuestas);
 
