@@ -17,7 +17,7 @@
 
 <body>
 
-    <body class="bg-light">
+    <body class="py-3 bg-light ">
         <nav class="navbar navbar-dark bg-dark fixed-top text-center" style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Diagnostico</a>
@@ -66,6 +66,53 @@
 
                 <div class="row g-5">
                     <hr class="my-4">
+                    <h3 class="mb-3 text-center">Sintomatología</h3>
+                    <!-- Button trigger modal -->
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="button" class="btn btn-lg btn-outline-warning" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            ¿No sabes qué hacer? ¡¡Presióname!!
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">¿Cómo Funciona?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Este test Diagnostico consta de 3 partes:</p>
+                                    <p>Primera: Usted deberá leer las preguntas del test e ir seleccionando la respuesta
+                                        que corresponda con los síntomas actuales que ha presentado en la última semana, al
+                                        terminar de seleccionar sus respuestas debe presionar el botón de "ver resultado General".
+                                    </p>
+
+
+                                    <p>Segunda: Con base en sus respuestas, se le mostrará un resultado general, el cual
+                                        le indicara, según sus síntomas, 3 posibles resultados: 1.- que enfermedad es posible que este presentando,
+                                        2.- si no presenta ninguna enfermedad de las vías urinarias o 3.- si sus síntomas coinciden con los de más de 
+                                        3 enfermedades se mostrará un resultado confuso.
+                                    </p>
+
+                                    <p>Tercera: Al pasar al diagnóstico detallado, usted podrá seleccionar de una lista de enfermedades
+                                        cuales desea validar su % de coincidencia con sus síntomas.
+                                    </p>
+
+                                    <p>NOTA: En la parte superior derecha, cuenta con un menú desplegable, al dar clic sobre él
+                                        podrá acceder a información adicional sobre las Enfermedades de vías Urinarias o generar un nuevo diagnóstico.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-7 col-lg-6 order-md-last">
 
                         <div class="my-3 ">
@@ -404,53 +451,6 @@
 
 
 
-                    <h3 class="mb-3 text-center">Sintomatología</h3>
-                    <!-- Button trigger modal -->
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="button" class="btn btn-lg btn-outline-warning" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            ¿No sabes qué hacer? ¡¡Presióname!!
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">¿Cómo Funciona?</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Este test Diagnostico consta de 3 partes:</p>
-                                    <p>Primera: Usted deberá leer las preguntas del test e ir seleccionando la respuesta
-                                        que corresponda con los síntomas actuales que ha presentado en la última semana, al
-                                        terminar de seleccionar sus respuestas debe presionar el botón de "ver resultado General".
-                                    </p>
-
-
-                                    <p>Segunda: Con base en sus respuestas, se le mostrará un resultado general, el cual
-                                        le indicara, según sus síntomas, 3 posibles resultados: 1.- que enfermedad es posible que este presentando,
-                                        2.- si no presenta ninguna enfermedad de las vías urinarias o 3.- si sus síntomas coinciden con los de más de 
-                                        3 enfermedades se mostrará un resultado confuso.
-                                    </p>
-
-                                    <p>Tercera: Al pasar al diagnóstico detallado, usted podrá seleccionar de una lista de enfermedades
-                                        cuales desea validar su % de coincidencia con sus síntomas.
-                                    </p>
-
-                                    <p>NOTA: En la parte superior derecha, cuenta con un menú desplegable, al dar clic sobre él
-                                        podrá acceder a información adicional sobre las Enfermedades de vías Urinarias o generar un nuevo diagnóstico.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
                     <div class="my-3 text-center">
