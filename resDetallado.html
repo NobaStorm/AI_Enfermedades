@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./assets/resDetallado.js"></script>
+    <script src="./assets/js/bootstrap.min.js" ></script>
+    <title>Enfermedades</title>
+</head>
+
+<body>
+
+    <body class="bg-light">
+
+        <div class="container" id="alert">
+            <main>
+                <div class="py-5 text-center" >     
+                    <h2>ENFERMEDADES UROLÓGICAS</h2>
+                    <p class="lead">Diagnostico de Enfermedades Urológicas aplicando Lógica Difusa</p>
+                    <p class="lead">Autor: Armando Martín Martínez León</p>
+                    <hr class="my-4">
+                    <div class="py-2 text-center" id="alerta">
+
+                    </div>
+                </div>
+
+
+
+                <div class="row justify-content-center ">
+                    
+
+                    <h3 class="mb-3 text-center">Diagnostivo Detallado</h3>
+                    <p class="mb-3 text-center">Favor de seleccinar las opciones de las enfermedades que desea comprobar
+                    </p>
+
+                    <hr class="my-4">
+
+                    <div class="col-md-7 col-lg-3 order-md-last justify-content-center  check" id = "checkboxEnf">
+                        <h5 class="mb-3">Lista de Enfermedades</h5>
+                        <!--
+                        <div class="py-5 ">
+                            <a class="w-30 btn btn-lg btn-outline-primary" id="selectAll" name = "selectAll" role="button">Selecionar todo</a>
+                    
+                        </div>-->
+
+
+
+                        <div class="form-check form-switch" id ="op1">
+                            <input class="form-check-input valores" value="0" type="checkbox" id="op11">
+                            <label class="form-check-label" for="op11">Cancer de Prostata</label>
+                        </div>
+
+
+                        <div class="form-check form-switch" id ="op2">
+                            <input class="form-check-input valores" value="1" type="checkbox" id="op12">
+                            <label class="form-check-label" for="op12">Cancer de Vejiga</label>
+                        </div>
+
+
+                        <div class="form-check form-switch" id ="op3">
+                            <input class="form-check-input valores" value="2" type="checkbox" id="op13">
+                            <label class="form-check-label" for="op13">Cistitis</label>
+                        </div>
+
+                        <div class="form-check form-switch" id ="op4">
+                            <input class="form-check-input valores" value="3" type="checkbox" id="op14">
+                            <label class="form-check-label" for="op14">Calculos Renales</label>
+                        </div>
+
+                        <div class="form-check form-switch" id ="op5">
+                            <input class="form-check-input valores" value="4" type="checkbox" id="op15">
+                            <label class="form-check-label" for="op15">Agrandamiento de Prostata</label>
+                        </div>
+
+                        <div class="form-check form-switch" id ="op6">
+                            <input class="form-check-input valores" value="5" type="checkbox" id="op16">
+                            <label class="form-check-label" for="op16">Orquitis</label>
+                        </div>
+
+                        <div class="form-check form-switch" id ="op7">
+                            <input class="form-check-input valores" value="6" type="checkbox" id="op17">
+                            <label class="form-check-label" for="op17">Infección Renal</label>
+                        </div>
+
+                        <div class="form-check form-switch" id ="op8">
+                            <input class="form-check-input valores" value="7" type="checkbox" id="op18">
+                            <label class="form-check-label" for="op18">Prostatitis</label>
+                        </div>
+
+                        <div class="form-check form-switch" id ="op9">
+                            <input class="form-check-input valores" value="8" type="checkbox" id="op19">
+                            <label class="form-check-label" for="op19">Uretritis</label>
+                        </div>
+
+                        <div class="form-check form-switch " id ="op10">
+                            <input class="form-check-input valores" value="9" type="checkbox" id="op110">
+                            <label class="form-check-label" for="op110">Cervisitis</label>
+                        </div>
+
+                        
+
+
+
+
+                    </div>
+
+                    <div class="col-md-7 col-lg-3 order-md-last justify-content-center">
+                        
+                        <div class="py-4">
+                            <button class="w-20 btn btn-lg btn-outline-info" id="selectAll">Seleccinar Todo</button>
+            
+                        </div>
+
+                        <div class="py-4">
+                            <button class="w-20 btn btn-lg btn-outline-danger" id="dismissAll">Borrar Selección</button>
+            
+                        </div>
+                        
+                        <div class="py-4">
+                            <button class="w-20 btn btn-lg btn-outline-success" id="boton">Mostrar Resultados</button>
+            
+                        </div>
+
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="py-5 res" id="result">
+                    <div class="py-3 " id="respuesta">
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="py-5 text-center" id="limpiar">
+                    <div class="py-4">
+                        <button class="w-50 btn btn-lg btn-outline-warning" id="limpiar">Limpiar Resultados</button>
+                    </div>
+                    
+
+                </div>
+            </main>
+            
+        </div>
+
+    </body>
+
+</html>

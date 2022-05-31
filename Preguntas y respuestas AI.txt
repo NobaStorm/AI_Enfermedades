@@ -1,0 +1,257 @@
+
+
+
+
+¿Presentas Dificultad para comenzar a orinar ?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+¿Tú flujo de orina es debil ?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+
+¿Vas a orinar más veces de lo normal, especialmente en la noche?
+
+No 0
+de 6 a 8 veces al día .25
+más de 9 veces al día .60
+Más de 9 veces al día y más de 2 en la noche 1
+
+¿Presentas dolor o ardor al orinar?
+
+No 0 
+Molestía leve ocasional .30
+Dolor ocasional .60
+Dolor persistente 1
+
+
+¿Has notado sangre en la orina o semen?
+
+No 0
+Una leve tonalidad roja .50
+Una tonalidad roja muy marcada.1
+
+
+¿Tienes dolor en espalda, caderas o pelvis?
+
+No 0 
+Molestía leve ocasional .30
+Dolor ocasional .60 
+Dolor persistente 1
+
+
+¿Has sentido dolor durante las relaciones sexuales / o si eres hombre, al eyacular?
+
+No 0
+Malestar ocasinal durante la relación  / o al eyacular .60
+Dolor durante la relación / o al eyacular 1
+
+¿Has presentado problemas para mantener una erección ?
+
+No 0
+Si 1
+
+¿Hay ocasiones en las que sientes ganas de orinar y no puedes?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+
+¿Te has sentido cansado o debil fuera de una situación normal?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+¿Has presentado incontinencia?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+Cuando vas a orinar ¿Tú orina tiene un olor fuerte o fétido?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+¿En los últimos días has tenido fiebre?
+
+No 0 
+Entre 37 y 37.5 Grados .40
+Entre 37.6 y 38 Grados .80
+Más de 38 Grados 1
+
+
+¿Te has sentido con nauseas o ganas de vomitar?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+¿Has notado que sudas más de lo normal o en exceso ?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+Si eres hombre ¿Has sentido dolor en los genitales o tésticulos ?
+
+No / No soy hombre 0 
+Molestía leve ocasional .30
+Dolor ocasional .5
+Dolor persistente 1
+
+Si eres hombre ¿Has notado inflamación en el escroto?
+
+No 0 
+Ligera inflamación .60
+Inflamación muy notoria 1
+
+
+Si eres hombre ¿Has sentido sensibilidad en los tésticulos (dolor, malestar al mínimo tacto)?
+
+No 0 
+Leve molestía al tacto .50
+Molestía al usar roba interior .70
+Dolor incluso sin ropa interior 1
+
+¿Has presentado dolores de cabeza?
+
+No 0
+En ocasiones dolor leve .20
+Dolor tolerable .50
+Dolor fuerte 1
+
+¿Has tenido escalofrio?
+
+No 0
+Si 1
+
+¿Has tenido secreción uretral?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+
+¿Hsa tenido ardor o molestías en el orificio uretral?
+
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+¿Has presentado dolor en la zona abdonimal?
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+Si ere mujer ¿Has notado si tienes flujo vaginal?
+No 0
+En ocasiones .30
+Regularmente .60
+Constantemente 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/main.js"></script>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <title>Enfermedades</title>
+</head>
+
+<body>
+
+    <body class="bg-light">
+
+        <div class="container">
+            <main>
+                <div class="py-5 text-center">
+                    <h2>ENFERMEDADES UROLÓGICAS</h2>
+                    <p class="lead">Diagnostico de Enfermedades Urológicas aplicando Lógica Difusa</p>
+                    <p class="lead">Autor: Armando Martín Martínez León</p>
+                    <p class="lead">La presente aplicación es solo para uso academico e informativo, los resultados y recomendaciones
+                         no buscan sustituir la Opinión de un Medico. Si presenta sintomás de malestar recuerde primero acudir con su
+                         Médico familiar para atención y tratamiento.
+
+                    </p>
+                </div>
+
+
+
+                <div class="row g-5">
+                    <hr class="my-4">
+                    <div class="col-md-7 col-lg-6 order-md-last">
+                        <div class="my-3 ">
+
+                            <!-- Sintoma 1 -->
+
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">1</span>
+                            </h4>
+                            <h4 class="mb-3">¿Presentas Dificultad para comenzar a orinar?</h4>
+                            <div class="form-check">
+                                <input id="p1_op1" name="Sintoma1" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p1_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p1_op2" name="Sintoma1" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p1_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p1_op3" name="Sintoma1" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p1_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p1_op4" name="Sintoma1" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p1_op4">Constantemente </label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 2 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">2</span>
+                            </h4>
+                            <h4 class="mb-3">¿Tú flujo de orina es débil?</h4>
+                            <div class="form-check">
+                                <input id="p2_op1" name="Sintoma2" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p2_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p2_op2" name="Sintoma2" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p2_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p2_op3" name="Sintoma2" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p2_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p2_op4" name="Sintoma2" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p2_op4">Constantemente </label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 3 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">3</span>
+                            </h4>
+                            <h4 class="mb-3">¿Vas a orinar más veces de lo normal, especialmente en la noche?</h4>
+                            <div class="form-check">
+                                <input id="p3_op1" name="Sintoma3" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p3_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p3_op2" name="Sintoma3" type="radio" class="valores" value = ".25" required="">
+                                <label class="form-check-label" for="p3_op2">De 6 a 8 veces al día</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p3_op3" name="Sintoma3" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p3_op3">Más de 9 veces al día</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p3_op4" name="Sintoma3" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p3_op4">Más de 9 veces al día y más de 2 en la noche </label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 4 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">4</span>
+                            </h4>
+                            <h4 class="mb-3">¿Presentas dolor o ardor al orinar?</h4>
+                            <div class="form-check">
+                                <input id="p4_op1" name="Sintoma4" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p4_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p4_op2" name="Sintoma4" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p4_op2">Molestia leve ocasional</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p4_op3" name="Sintoma4" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p4_op3">Dolor ocasional</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p4_op4" name="Sintoma4" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p4_op4">Dolor persistente</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 5 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">5</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has notado sangre en la orina o semen?</h4>
+                            <div class="form-check">
+                                <input id="p5_op1" name="Sintoma5" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p5_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p5_op2" name="Sintoma5" type="radio" class="valores" value = ".50" required="">
+                                <label class="form-check-label" for="p5_op2">Una leve tonalidad roja</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p5_op3" name="Sintoma5" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p5_op3">Una tonalidad roja muy marcada</label>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Sintoma 6 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">6</span>
+                            </h4>
+                            <h4 class="mb-3">¿Tienes dolor en espalda, caderas o pelvis?</h4>
+                            <div class="form-check">
+                                <input id="p6_op1" name="Sintoma6" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p6_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p6_op2" name="Sintoma6" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p6_op2">Molestia leve ocasional</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p6_op3" name="Sintoma6" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p6_op3">Dolor ocasional</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p6_op4" name="Sintoma6" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p6_op4">Dolor persistente</label>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Sintoma 7 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">7</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has sentido dolor durante las relaciones sexuales / o si eres hombre, al eyacular?</h4>
+                            <div class="form-check">
+                                <input id="p7_op1" name="Sintoma7" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p7_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p7_op2" name="Sintoma7" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p7_op2">Malestar ocasional durante la relación / o al eyacular</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p7_op3" name="Sintoma7" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p7_op3">Dolor durante la relación / o al eyacular</label>
+                            </div>
+                            
+                            
+                        </div>
+
+                        <!-- Sintoma 8 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">8</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has presentado problemas para mantener una erección?</h4>
+                            <div class="form-check">
+                                <input id="p8_op1" name="Sintoma8" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p8_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p8_op2" name="Sintoma8" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p8_op2">si</label>
+                            </div>
+                                                      
+                            
+                        </div>
+
+                        <!-- Sintoma 9 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">9</span>
+                            </h4>
+                            <h4 class="mb-3">¿Hay ocasiones en las que sientes ganas de orinar y no puedes?</h4>
+                            <div class="form-check">
+                                <input id="p9_op1" name="Sintoma9" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p9_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p9_op2" name="Sintoma9" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p9_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p9_op3" name="Sintoma9" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p9_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p9_op4" name="Sintoma9" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p9_op4">Constantemente</label>
+                            </div>
+                            
+                            
+                        </div>
+
+                        <!-- Sintoma 10 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">10</span>
+                            </h4>
+                            <h4 class="mb-3">¿Te has sentido cansado o débil fuera de una situación normal?</h4>
+                            <div class="form-check">
+                                <input id="p10_op1" name="Sintoma10" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p10_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p10_op2" name="Sintoma10" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p10_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p10_op3" name="Sintoma10" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p10_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p10_op4" name="Sintoma10" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p10_op4">Constantemente</label>
+                            </div>                            
+                            
+                        </div>
+
+                        <!-- Sintoma 11 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">11</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has presentado incontinencia?</h4>
+                            <div class="form-check">
+                                <input id="p11_op1" name="Sintoma11" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p11_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p11_op2" name="Sintoma11" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p11_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p11_op3" name="Sintoma11" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p11_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p11_op4" name="Sintoma11" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p11_op4">Constantemente</label>
+                            </div>                            
+                            
+                        </div>
+
+                        <!-- Sintoma 12 -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </h4>
+                            <h4 class="mb-3">Cuando vas a orinar ¿Tú orina tiene un olor fuerte o fétido?</h4>
+                            <div class="form-check">
+                                <input id="p12_op1" name="Sintoma12" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p12_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p12_op2" name="Sintoma12" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p12_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p12_op3" name="Sintoma12" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p12_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p12_op4" name="Sintoma12" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p12_op4">Constantemente</label>
+                            </div>                            
+                            
+                        </div>
+
+
+                        
+                    </div>
+
+
+
+                    <h3 class="mb-3 text-center">Sintomatología</h3>
+
+                    <div class="my-3 text-center">
+                        <hr class="my-4">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3 text-center">
+                            <span class="badge bg-primary rounded-pill text-center"></span>
+                        </h4>
+                        <h4 class="mb-3">¿Cuál es tu Género?</h4>
+                        <div class="form-check">
+                            <input id="generoM" name="genero" type="radio" class="genero" value = "0" checked=""
+                                required="">
+                            <label class="form-check-label" for="generoM">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="generoF" name="genero" type="radio" class="genero" value = "1" required="">
+                            <label class="form-check-label" for="generoF">Femenino</label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-7 col-lg-6 order-md-last">
+
+                        <!-- Sintoma 13 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">13</span>
+                            </h4>
+                            <h4 class="mb-3">¿En los últimos días has tenido fiebre?</h4>
+                            <div class="form-check">
+                                <input id="p13_op1" name="Sintoma13" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p13_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p13_op2" name="Sintoma13" type="radio" class="valores" value = ".40" required="">
+                                <label class="form-check-label" for="p13_op2">Entre 37 y 37.5 Grados</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p13_op3" name="Sintoma13" type="radio" class="valores" value = ".80" required="">
+                                <label class="form-check-label" for="p13_op3">Entre 37.6 y 38 Grados</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p13_op4" name="Sintoma13" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p13_op4">Más de 38 Grados</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 14 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">14</span>
+                            </h4>
+                            <h4 class="mb-3">¿Te has sentido con nauseas o ganas de vomitar?</h4>
+                            <div class="form-check">
+                                <input id="p14_op1" name="Sintoma14" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p14_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p14_op2" name="Sintoma14" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p14_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p14_op3" name="Sintoma14" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p14_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p14_op4" name="Sintoma14" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p14_op4">Constantemente</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 15 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">15</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has notado que sudas más de lo normal o en exceso?</h4>
+                            <div class="form-check">
+                                <input id="p15_op1" name="Sintoma15" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p15_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p15_op2" name="Sintoma15" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p15_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p15_op3" name="Sintoma15" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p15_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p15_op4" name="Sintoma15" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p15_op4">Constantemente</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 16 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">16</span>
+                            </h4>
+                            <h4 class="mb-3">Si eres hombre ¿Has sentido dolor en los genitales o testículos?</h4>
+                            <div class="form-check">
+                                <input id="p16_op1" name="Sintoma16" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p16_op1">No / No soy hombre</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p16_op2" name="Sintoma16" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p16_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p16_op3" name="Sintoma16" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p16_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p16_op4" name="Sintoma16" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p16_op4">Constantemente</label>
+                            </div>
+                        </div>
+
+
+                        <!-- Sintoma 17 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">17</span>
+                            </h4>
+                            <h4 class="mb-3">Si eres hombre ¿Has notado inflamación en el escroto?</h4>
+                            <div class="form-check">
+                                <input id="p17_op1" name="Sintoma17" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p17_op1">No / No soy hombre</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p17_op2" name="Sintoma17" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p17_op2">Ligera inflamación</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p17_op3" name="Sintoma17" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p17_op3">Inflamación muy notoria</label>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Sintoma 18 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">18</span>
+                            </h4>
+                            <h4 class="mb-3">Si eres hombre ¿Has sentido sensibilidad en los testículos (dolor, malestar al mínimo tacto)?</h4>
+                            <div class="form-check">
+                                <input id="p18_op1" name="Sintoma18" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p18_op1">No / No soy hombre</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p18_op2" name="Sintoma18" type="radio" class="valores" value = ".50" required="">
+                                <label class="form-check-label" for="p18_op2">Leve molestia al tacto</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p18_op3" name="Sintoma18" type="radio" class="valores" value = ".70" required="">
+                                <label class="form-check-label" for="p18_op3">Molestia al usar roba interior</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p18_op4" name="Sintoma18" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p18_op4">Dolor incluso sin ropa interior</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 19 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">19</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has presentado dolores de cabeza?</h4>
+                            <div class="form-check">
+                                <input id="p19_op1" name="Sintoma19" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p19_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p19_op2" name="Sintoma19" type="radio" class="valores" value = ".20" required="">
+                                <label class="form-check-label" for="p19_op2">En ocasiones dolor leve</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p19_op3" name="Sintoma19" type="radio" class="valores" value = ".50" required="">
+                                <label class="form-check-label" for="p19_op3">Dolor tolerable</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p19_op4" name="Sintoma19" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p19_op4">Dolor fuerte</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 20 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">20</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has tenido escalofriós?</h4>
+                            <div class="form-check">
+                                <input id="p20_op1" name="Sintoma20" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p20_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p20_op2" name="Sintoma20" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p20_op2">Si</label>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Sintoma 21 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">21</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has tenido secreción uretral?</h4>
+                            <div class="form-check">
+                                <input id="p21_op1" name="Sintoma21" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p21_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p21_op2" name="Sintoma21" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p21_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p21_op3" name="Sintoma21" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p21_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p21_op4" name="Sintoma21" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p21_op4">Constantemente</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 22 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">22</span>
+                            </h4>
+                            <h4 class="mb-3">¿Has tenido ardor o molestias en el orificio uretral?</h4>
+                            <div class="form-check">
+                                <input id="p22_op1" name="Sintoma22" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p22_op1">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p22_op2" name="Sintoma22" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p22_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p22_op3" name="Sintoma22" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p22_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p22_op4" name="Sintoma22" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p22_op4">Constantemente</label>
+                            </div>
+                        </div>
+
+                        <!-- Sintoma 23 Lado Derecho -->
+
+                        <div class="my-3 ">
+                            <hr class="my-4">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">23</span>
+                            </h4>
+                            <h4 class="mb-3">Si ere mujer ¿Has notado flujo vaginal?</h4>
+                            <div class="form-check">
+                                <input id="p23_op1" name="Sintoma23" type="radio" class="valores" value = "0" checked=""
+                                    required="">
+                                <label class="form-check-label" for="p23_op1">No / No soy Mujer</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p23_op2" name="Sintoma23" type="radio" class="valores" value = ".30" required="">
+                                <label class="form-check-label" for="p23_op2">En ocasiones</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p23_op3" name="Sintoma23" type="radio" class="valores" value = ".60" required="">
+                                <label class="form-check-label" for="p23_op3">Regularmente</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="p23_op4" name="Sintoma23" type="radio" class="valores" value = "1" required="">
+                                <label class="form-check-label" for="p23_op4">Constantemente</label>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    
+                </div>
+            </main>
+            <ul id="lista" class="list-group"></ul>
+            <div class="py-5 text-center">
+                <button class="w-50 btn btn-lg btn-primary btn-primary" id = "boton">Entrar</button>
+        
+            </div>
+        </div>
+            
+    </body>
+
+</html>
