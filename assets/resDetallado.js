@@ -168,17 +168,23 @@ function modalInfo() {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-          <p>En el resultado detallado usted podra ver el Nombre de las Enfermedades con las que comparamos su resultado, debajo del nombre,
-          usted podra notar una pequeña barra la cual contendrá un porcentaje, este porcentaje es el nivel de coincidencía de los sintomas
-          que usted selecciono en la ventana de DIAGNOSTICO.</p>
-            
+          <p>En el resultado detallado usted podrá ver el Nombre de las Enfermedades con las
+                que comparamos su resultado, debajo del nombre,
+                usted podrá notar una pequeña barra la cual contendrá un porcentaje, este
+                porcentaje es el nivel de coincidencia de los síntomas
+                que usted selecciono en la ventana de DIAGNOSTICO.</p>
 
-            <p>Es importante mencionar que al ver un porcentaje en una enfermedad no significa que usted la tenga, solo debe poner atención
-            en los porcentajes por arriba del 85%, ya que es donde más coincidencías tiene con sus sintomas y donde la probabilidad de
-            tener la enfermedad es más alta.</p>
-            
-            <p>NOTA: Si usted ve la enfermedad,pero la barra por debajo no tiene ningún porcentaje ni nota alguna porción en color azul
-             es debido a que la Coincidencia es del 0%, es decir, no cuenta con sintomas que coincidan con la enfermedad. </p>
+
+            <p>Es importante mencionar que al ver un porcentaje en una enfermedad no significa
+                que usted la tenga, solo debe poner atención
+                en los porcentajes por arriba del 85%, ya que es donde más coincidencias tiene
+                con sus síntomas y donde la probabilidad de
+                tener la enfermedad es más alta.</p>
+
+            <p>NOTA: Si usted ve la enfermedad, pero la barra por debajo no tiene ningún
+                porcentaje ni nota alguna porción en color azul
+                es debido a que la Coincidencia es del 0%, es decir, no cuenta con síntomas que
+                coincidan con la enfermedad.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
