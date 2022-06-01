@@ -24,7 +24,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
+                    <a>Opciones </a>
                     <span class="navbar-toggler-icon"></span>
+                    
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -51,14 +53,13 @@
             <main>
                 <div class="py-5 text-center">
                     <h2>ENFERMEDADES UROLÓGICAS</h2>
-                    <p class="lead">Diagnostico de Enfermedades Urológicas aplicando Lógica Difusa</p>
+                    <p class="lead">Diagnóstico de Enfermedades Urológicas aplicando Lógica Difusa</p>
                     <p class="lead">Autor: Armando Martín Martínez León</p>
-                    <p class="lead">La presente aplicación es solo para uso academico e informativo, los resultados y
+                    <p class="lead">La presente aplicación es solo para uso académico e informativo, los resultados y
                         recomendaciones
-                        no buscan sustituir la Opinión de un Medico. Si presenta sintomás de malestar recuerde primero
+                        no buscan sustituir la Opinión de un Médico. Si presenta síntomas de malestar recuerde primero
                         acudir con su
                         Médico familiar para atención y tratamiento.
-
                     </p>
                 </div>
 
@@ -71,7 +72,7 @@
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button type="button" class="btn btn-lg btn-outline-warning" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
-                            ¿No sabes qué hacer? ¡¡Presióname!!
+                            Antes de Iniciar ¡¡Presióname!!
                         </button>
                     </div>
 
@@ -88,23 +89,30 @@
                                 <div class="modal-body">
                                     <p>Este test Diagnostico consta de 3 partes:</p>
                                     <p>Primera: Usted deberá leer las preguntas del test e ir seleccionando la respuesta
-                                        que corresponda con los síntomas actuales que ha presentado en la última semana, al
-                                        terminar de seleccionar sus respuestas debe presionar el botón de "ver resultado General".
+                                        que corresponda con los síntomas actuales que ha presentado en la última semana,
+                                        al
+                                        terminar de seleccionar sus respuestas debe presionar el botón de "ver resultado
+                                        General".
                                     </p>
 
 
                                     <p>Segunda: Con base en sus respuestas, se le mostrará un resultado general, el cual
-                                        le indicara, según sus síntomas, 3 posibles resultados: 1.- que enfermedad es posible que este presentando,
-                                        2.- si no presenta ninguna enfermedad de las vías urinarias o 3.- si sus síntomas coinciden con los de más de 
+                                        le indicara, según sus síntomas, 3 posibles resultados: 1.- que enfermedad es
+                                        posible que este presentando,
+                                        2.- si no presenta ninguna enfermedad de las vías urinarias o 3.- si sus
+                                        síntomas coinciden con los de más de
                                         3 enfermedades se mostrará un resultado confuso.
                                     </p>
 
-                                    <p>Tercera: Al pasar al diagnóstico detallado, usted podrá seleccionar de una lista de enfermedades
+                                    <p>Tercera: Al pasar al diagnóstico detallado, usted podrá seleccionar de una lista
+                                        de enfermedades
                                         cuales desea validar su % de coincidencia con sus síntomas.
                                     </p>
 
-                                    <p>NOTA: En la parte superior derecha, cuenta con un menú desplegable, al dar clic sobre él
-                                        podrá acceder a información adicional sobre las Enfermedades de vías Urinarias o generar un nuevo diagnóstico.</p>
+                                    <p>NOTA: En la parte superior derecha, cuenta con un menú desplegable, al dar clic
+                                        sobre él
+                                        podrá acceder a información adicional sobre las Enfermedades de vías Urinarias o
+                                        generar un nuevo diagnóstico.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -113,6 +121,27 @@
                             </div>
                         </div>
                     </div>
+                    <div class="my-3 text-center ">
+
+                        <hr class="my-4">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3 d-flex ">
+                            <span class="badge bg-primary rounded-pill "></span>
+                        </h4>
+                        <h4 class="mb-3">¿Cuál es tu Género?</h4>
+                        <div class="form-check">
+                            <input id="generoM" name="genero" type="radio" Onclick="genderM();" class="genero" value="0" 
+                                required="">
+                            <label class="form-check-label" for="generoM">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="generoF" name="genero" type="radio" Onclick="genderF();" class="genero" value="1" required="">
+                            <label class="form-check-label" for="generoF">Femenino</label>
+                        </div>
+                    </div>
+                    <h5 class="text-center">Favor de leer cada inciso y seleccionar la  opción que más se identifique con los síntomas que presenta.
+                        No es necesario responder en orden.
+                    </h5>
+                    <h5 class="text-center">Nota: Al seleccionar su genero, se bloquean las opciones que no corresponen con el mismo.</h5>
                     <div class="col-md-7 col-lg-6 order-md-last">
 
                         <div class="my-3 ">
@@ -123,23 +152,23 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">1</span>
                             </h4>
-                            <h4 class="mb-3">¿Presentas Dificultad para comenzar a orinar?</h4>
+                            <h4 class="mb-3">Tengo dificultad para comenzar a orinar</h4>
                             <div class="form-check">
                                 <input id="p1_op1" name="Sintoma1" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p1_op1">No</label>
+                                <label class="form-check-label" for="p1_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p1_op2" name="Sintoma1" type="radio" class="valores" value=".30" required="">
-                                <label class="form-check-label" for="p1_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p1_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p1_op3" name="Sintoma1" type="radio" class="valores" value=".60" required="">
-                                <label class="form-check-label" for="p1_op3">Regularmente</label>
+                                <label class="form-check-label" for="p1_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p1_op4" name="Sintoma1" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p1_op4">Constantemente </label>
+                                <label class="form-check-label" for="p1_op4">Casí todos los días</label>
                             </div>
                         </div>
 
@@ -150,23 +179,23 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">2</span>
                             </h4>
-                            <h4 class="mb-3">¿Tú flujo de orina es débil?</h4>
+                            <h4 class="mb-3">Tengo Flujo de orina débil</h4>
                             <div class="form-check">
                                 <input id="p2_op1" name="Sintoma2" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p2_op1">No</label>
+                                <label class="form-check-label" for="p2_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p2_op2" name="Sintoma2" type="radio" class="valores" value=".30" required="">
-                                <label class="form-check-label" for="p2_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p2_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p2_op3" name="Sintoma2" type="radio" class="valores" value=".60" required="">
-                                <label class="form-check-label" for="p2_op3">Regularmente</label>
+                                <label class="form-check-label" for="p2_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p2_op4" name="Sintoma2" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p2_op4">Constantemente </label>
+                                <label class="form-check-label" for="p2_op4">Casi todos los días </label>
                             </div>
                         </div>
 
@@ -177,11 +206,11 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">3</span>
                             </h4>
-                            <h4 class="mb-3">¿Vas a orinar más veces de lo normal, especialmente en la noche?</h4>
+                            <h4 class="mb-3">Acudo a Orinar ... </h4>
                             <div class="form-check">
                                 <input id="p3_op1" name="Sintoma3" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p3_op1">No</label>
+                                <label class="form-check-label" for="p3_op1">Menos de 6 veces al día</label>
                             </div>
                             <div class="form-check">
                                 <input id="p3_op2" name="Sintoma3" type="radio" class="valores" value=".25" required="">
@@ -205,23 +234,23 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">4</span>
                             </h4>
-                            <h4 class="mb-3">¿Presentas dolor o ardor al orinar?</h4>
+                            <h4 class="mb-3">Tengo dolor o ardor al orinar</h4>
                             <div class="form-check">
                                 <input id="p4_op1" name="Sintoma4" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p4_op1">No</label>
+                                <label class="form-check-label" for="p4_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p4_op2" name="Sintoma4" type="radio" class="valores" value=".30" required="">
-                                <label class="form-check-label" for="p4_op2">Molestia leve ocasional</label>
+                                <label class="form-check-label" for="p4_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p4_op3" name="Sintoma4" type="radio" class="valores" value=".60" required="">
-                                <label class="form-check-label" for="p4_op3">Dolor ocasional</label>
+                                <label class="form-check-label" for="p4_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p4_op4" name="Sintoma4" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p4_op4">Dolor persistente</label>
+                                <label class="form-check-label" for="p4_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -232,7 +261,7 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">5</span>
                             </h4>
-                            <h4 class="mb-3">¿Has notado sangre en la orina o semen?</h4>
+                            <h4 class="mb-3">He notado presencia de sangre en mi orina</h4>
                             <div class="form-check">
                                 <input id="p5_op1" name="Sintoma5" type="radio" class="valores" value="0" checked=""
                                     required="">
@@ -256,23 +285,23 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">6</span>
                             </h4>
-                            <h4 class="mb-3">¿Tienes dolor en espalda, caderas o pelvis?</h4>
+                            <h4 class="mb-3">Tengo dolor en espalda, caderas o pelvis</h4>
                             <div class="form-check">
                                 <input id="p6_op1" name="Sintoma6" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p6_op1">No</label>
+                                <label class="form-check-label" for="p6_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p6_op2" name="Sintoma6" type="radio" class="valores" value=".30" required="">
-                                <label class="form-check-label" for="p6_op2">Molestia leve ocasional</label>
+                                <label class="form-check-label" for="p6_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p6_op3" name="Sintoma6" type="radio" class="valores" value=".60" required="">
-                                <label class="form-check-label" for="p6_op3">Dolor ocasional</label>
+                                <label class="form-check-label" for="p6_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p6_op4" name="Sintoma6" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p6_op4">Dolor persistente</label>
+                                <label class="form-check-label" for="p6_op4">Casi todos los días</label>
                             </div>
 
                         </div>
@@ -284,22 +313,19 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">7</span>
                             </h4>
-                            <h4 class="mb-3">¿Has sentido dolor durante las relaciones sexuales / o si eres hombre, al
-                                eyacular?</h4>
+                            <h4 class="mb-3">Tengo dolor durante las relaciones sexuales</h4>
                             <div class="form-check">
                                 <input id="p7_op1" name="Sintoma7" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p7_op1">No</label>
+                                <label class="form-check-label" for="p7_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p7_op2" name="Sintoma7" type="radio" class="valores" value=".60" required="">
-                                <label class="form-check-label" for="p7_op2">Malestar ocasional durante la relación / o
-                                    al eyacular</label>
+                                <label class="form-check-label" for="p7_op2">Malestar ocasional durante la relación sexual</label>
                             </div>
                             <div class="form-check">
                                 <input id="p7_op3" name="Sintoma7" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p7_op3">Dolor durante la relación / o al
-                                    eyacular</label>
+                                <label class="form-check-label" for="p7_op3">Dolor durante la relación sexual</label>
                             </div>
 
 
@@ -312,7 +338,7 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">8</span>
                             </h4>
-                            <h4 class="mb-3">¿Has presentado problemas para mantener una erección?</h4>
+                            <h4 class="mb-3">He tenido problemas para mantener una erección</h4>
                             <div class="form-check">
                                 <input id="p8_op1" name="Sintoma8" type="radio" class="valores" value="0" checked=""
                                     required="">
@@ -333,23 +359,23 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">9</span>
                             </h4>
-                            <h4 class="mb-3">¿Hay ocasiones en las que sientes ganas de orinar y no puedes?</h4>
+                            <h4 class="mb-3">Tengo ganas de orinar pero no puedo hacerlo</h4>
                             <div class="form-check">
                                 <input id="p9_op1" name="Sintoma9" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p9_op1">No</label>
+                                <label class="form-check-label" for="p9_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p9_op2" name="Sintoma9" type="radio" class="valores" value=".30" required="">
-                                <label class="form-check-label" for="p9_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p9_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p9_op3" name="Sintoma9" type="radio" class="valores" value=".60" required="">
-                                <label class="form-check-label" for="p9_op3">Regularmente</label>
+                                <label class="form-check-label" for="p9_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p9_op4" name="Sintoma9" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p9_op4">Constantemente</label>
+                                <label class="form-check-label" for="p9_op4">Casi todos los días</label>
                             </div>
 
 
@@ -362,25 +388,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">10</span>
                             </h4>
-                            <h4 class="mb-3">¿Te has sentido cansado o débil fuera de una situación normal?</h4>
+                            <h4 class="mb-3">Me he llegado a sentir más cansado de lo normal.</h4>
                             <div class="form-check">
                                 <input id="p10_op1" name="Sintoma10" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p10_op1">No</label>
+                                <label class="form-check-label" for="p10_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p10_op2" name="Sintoma10" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p10_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p10_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p10_op3" name="Sintoma10" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p10_op3">Regularmente</label>
+                                <label class="form-check-label" for="p10_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p10_op4" name="Sintoma10" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p10_op4">Constantemente</label>
+                                <label class="form-check-label" for="p10_op4">Casi todos los días</label>
                             </div>
 
                         </div>
@@ -392,25 +418,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">11</span>
                             </h4>
-                            <h4 class="mb-3">¿Has presentado incontinencia?</h4>
+                            <h4 class="mb-3">Tengo incontinencia</h4>
                             <div class="form-check">
                                 <input id="p11_op1" name="Sintoma11" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p11_op1">No</label>
+                                <label class="form-check-label" for="p11_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p11_op2" name="Sintoma11" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p11_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p11_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p11_op3" name="Sintoma11" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p11_op3">Regularmente</label>
+                                <label class="form-check-label" for="p11_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p11_op4" name="Sintoma11" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p11_op4">Constantemente</label>
+                                <label class="form-check-label" for="p11_op4">Casi todos los días</label>
                             </div>
 
                         </div>
@@ -422,25 +448,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">12</span>
                             </h4>
-                            <h4 class="mb-3">Cuando vas a orinar ¿Tú orina tiene un olor fuerte o fétido?</h4>
+                            <h4 class="mb-3">Mi orina tiene un olor fuerte o fétido</h4>
                             <div class="form-check">
                                 <input id="p12_op1" name="Sintoma12" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p12_op1">No</label>
+                                <label class="form-check-label" for="p12_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p12_op2" name="Sintoma12" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p12_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p12_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p12_op3" name="Sintoma12" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p12_op3">Regularmente</label>
+                                <label class="form-check-label" for="p12_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p12_op4" name="Sintoma12" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p12_op4">Constantemente</label>
+                                <label class="form-check-label" for="p12_op4">Casi todos los días</label>
                             </div>
 
                         </div>
@@ -453,25 +479,7 @@
 
 
 
-                    <div class="my-3 text-center">
 
-                        <hr class="my-4">
-                        <h4 class="d-flex justify-content-between align-items-center mb-3 text-center">
-                            <span class="badge bg-primary rounded-pill text-center"></span>
-                        </h4>
-                        <h4 class="mb-3">¿Cuál es tu Género?</h4>
-                        <div class="form-check">
-                            <input id="generoM" name="genero" type="radio" class="genero" value="0" checked=""
-                                required="">
-                            <label class="form-check-label" for="generoM">Masculino</label>
-                        </div>
-                        <div class="form-check">
-                            <input id="generoF" name="genero" type="radio" class="genero" value="1" required="">
-                            <label class="form-check-label" for="generoF">Femenino</label>
-                        </div>
-
-
-                    </div>
 
                     <div class="col-md-7 col-lg-6 order-md-last">
 
@@ -482,7 +490,7 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">13</span>
                             </h4>
-                            <h4 class="mb-3">¿En los últimos días has tenido fiebre?</h4>
+                            <h4 class="mb-3">Tengo Fiebre</h4>
                             <div class="form-check">
                                 <input id="p13_op1" name="Sintoma13" type="radio" class="valores" value="0" checked=""
                                     required="">
@@ -511,25 +519,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">14</span>
                             </h4>
-                            <h4 class="mb-3">¿Te has sentido con nauseas o ganas de vomitar?</h4>
+                            <h4 class="mb-3">Tengo Nauseas y/o ganas de vomitar</h4>
                             <div class="form-check">
                                 <input id="p14_op1" name="Sintoma14" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p14_op1">No</label>
+                                <label class="form-check-label" for="p14_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p14_op2" name="Sintoma14" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p14_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p14_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p14_op3" name="Sintoma14" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p14_op3">Regularmente</label>
+                                <label class="form-check-label" for="p14_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p14_op4" name="Sintoma14" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p14_op4">Constantemente</label>
+                                <label class="form-check-label" for="p14_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -540,25 +548,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">15</span>
                             </h4>
-                            <h4 class="mb-3">¿Has notado que sudas más de lo normal o en exceso?</h4>
+                            <h4 class="mb-3">He sudado en exceso sin hacer ejercicio o actividades extenuantes</h4>
                             <div class="form-check">
                                 <input id="p15_op1" name="Sintoma15" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p15_op1">No</label>
+                                <label class="form-check-label" for="p15_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p15_op2" name="Sintoma15" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p15_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p15_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p15_op3" name="Sintoma15" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p15_op3">Regularmente</label>
+                                <label class="form-check-label" for="p15_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p15_op4" name="Sintoma15" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p15_op4">Constantemente</label>
+                                <label class="form-check-label" for="p15_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -569,25 +577,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">16</span>
                             </h4>
-                            <h4 class="mb-3">Si eres hombre ¿Has sentido dolor en los genitales o testículos?</h4>
+                            <h4 class="mb-3">Tengo dolor en los testículos y/o en la zona genital </h4>
                             <div class="form-check">
                                 <input id="p16_op1" name="Sintoma16" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p16_op1">No / No soy hombre</label>
+                                <label class="form-check-label" for="p16_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p16_op2" name="Sintoma16" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p16_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p16_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p16_op3" name="Sintoma16" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p16_op3">Regularmente</label>
+                                <label class="form-check-label" for="p16_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p16_op4" name="Sintoma16" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p16_op4">Constantemente</label>
+                                <label class="form-check-label" for="p16_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -599,20 +607,20 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">17</span>
                             </h4>
-                            <h4 class="mb-3">Si eres hombre ¿Has notado inflamación en el escroto?</h4>
+                            <h4 class="mb-3">He notado inflamación en el escroto.</h4>
                             <div class="form-check">
                                 <input id="p17_op1" name="Sintoma17" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p17_op1">No / No soy hombre</label>
+                                <label class="form-check-label" for="p17_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p17_op2" name="Sintoma17" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p17_op2">Ligera inflamación</label>
+                                <label class="form-check-label" for="p17_op2">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p17_op3" name="Sintoma17" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p17_op3">Inflamación muy notoria</label>
+                                <label class="form-check-label" for="p17_op3">Casi todos los días</label>
                             </div>
 
                         </div>
@@ -624,26 +632,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">18</span>
                             </h4>
-                            <h4 class="mb-3">Si eres hombre ¿Has sentido sensibilidad en los testículos (dolor, malestar
-                                al mínimo tacto)?</h4>
+                            <h4 class="mb-3">Tengo sensibilidad en los testículos (dolor, malestar al mínimo tacto)</h4>
                             <div class="form-check">
                                 <input id="p18_op1" name="Sintoma18" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p18_op1">No / No soy hombre</label>
+                                <label class="form-check-label" for="p18_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p18_op2" name="Sintoma18" type="radio" class="valores" value=".50"
                                     required="">
-                                <label class="form-check-label" for="p18_op2">Leve molestia al tacto</label>
+                                <label class="form-check-label" for="p18_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p18_op3" name="Sintoma18" type="radio" class="valores" value=".70"
                                     required="">
-                                <label class="form-check-label" for="p18_op3">Molestia al usar roba interior</label>
+                                <label class="form-check-label" for="p18_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p18_op4" name="Sintoma18" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p18_op4">Dolor incluso sin ropa interior</label>
+                                <label class="form-check-label" for="p18_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -654,25 +661,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">19</span>
                             </h4>
-                            <h4 class="mb-3">¿Has presentado dolores de cabeza?</h4>
+                            <h4 class="mb-3">Tengo dolor de cabeza</h4>
                             <div class="form-check">
                                 <input id="p19_op1" name="Sintoma19" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p19_op1">No</label>
+                                <label class="form-check-label" for="p19_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p19_op2" name="Sintoma19" type="radio" class="valores" value=".20"
                                     required="">
-                                <label class="form-check-label" for="p19_op2">En ocasiones dolor leve</label>
+                                <label class="form-check-label" for="p19_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p19_op3" name="Sintoma19" type="radio" class="valores" value=".50"
                                     required="">
-                                <label class="form-check-label" for="p19_op3">Dolor tolerable</label>
+                                <label class="form-check-label" for="p19_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p19_op4" name="Sintoma19" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p19_op4">Dolor fuerte</label>
+                                <label class="form-check-label" for="p19_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -683,7 +690,7 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">20</span>
                             </h4>
-                            <h4 class="mb-3">¿Has tenido escalofriós?</h4>
+                            <h4 class="mb-3">Tengo escalofrios</h4>
                             <div class="form-check">
                                 <input id="p20_op1" name="Sintoma20" type="radio" class="valores" value="0" checked=""
                                     required="">
@@ -703,25 +710,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">21</span>
                             </h4>
-                            <h4 class="mb-3">¿Has tenido secreción uretral?</h4>
+                            <h4 class="mb-3">He notado una secreción de color blanquizco por donde orino</h4>
                             <div class="form-check">
                                 <input id="p21_op1" name="Sintoma21" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p21_op1">No</label>
+                                <label class="form-check-label" for="p21_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p21_op2" name="Sintoma21" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p21_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p21_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p21_op3" name="Sintoma21" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p21_op3">Regularmente</label>
+                                <label class="form-check-label" for="p21_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p21_op4" name="Sintoma21" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p21_op4">Constantemente</label>
+                                <label class="form-check-label" for="p21_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -732,25 +739,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">22</span>
                             </h4>
-                            <h4 class="mb-3">¿Has tenido ardor o molestias en el orificio uretral?</h4>
+                            <h4 class="mb-3">Tengo comezón o ardor por donde orino</h4>
                             <div class="form-check">
                                 <input id="p22_op1" name="Sintoma22" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p22_op1">No</label>
+                                <label class="form-check-label" for="p22_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p22_op2" name="Sintoma22" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p22_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p22_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p22_op3" name="Sintoma22" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p22_op3">Regularmente</label>
+                                <label class="form-check-label" for="p22_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p22_op4" name="Sintoma22" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p22_op4">Constantemente</label>
+                                <label class="form-check-label" for="p22_op4">Casi todos los días</label>
                             </div>
                         </div>
 
@@ -761,25 +768,25 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill">23</span>
                             </h4>
-                            <h4 class="mb-3">Si ere mujer ¿Has notado flujo vaginal?</h4>
+                            <h4 class="mb-3">He notado un flujo vaginal blanquizo o de colores entre cafe y verde</h4>
                             <div class="form-check">
                                 <input id="p23_op1" name="Sintoma23" type="radio" class="valores" value="0" checked=""
                                     required="">
-                                <label class="form-check-label" for="p23_op1">No / No soy Mujer</label>
+                                <label class="form-check-label" for="p23_op1">Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p23_op2" name="Sintoma23" type="radio" class="valores" value=".30"
                                     required="">
-                                <label class="form-check-label" for="p23_op2">En ocasiones</label>
+                                <label class="form-check-label" for="p23_op2">Casi Nunca</label>
                             </div>
                             <div class="form-check">
                                 <input id="p23_op3" name="Sintoma23" type="radio" class="valores" value=".60"
                                     required="">
-                                <label class="form-check-label" for="p23_op3">Regularmente</label>
+                                <label class="form-check-label" for="p23_op3">Ocasionalmente</label>
                             </div>
                             <div class="form-check">
                                 <input id="p23_op4" name="Sintoma23" type="radio" class="valores" value="1" required="">
-                                <label class="form-check-label" for="p23_op4">Constantemente</label>
+                                <label class="form-check-label" for="p23_op4">Casi todos los días</label>
                             </div>
                         </div>
 

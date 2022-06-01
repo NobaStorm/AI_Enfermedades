@@ -58,3 +58,52 @@ function respuestas() {
     window.location.href = "resGeneral.html";
 
 }
+
+function genderM() {
+
+    if (document.getElementById('generoM').checked) {
+        document.getElementById('p23_op1').disabled = true;
+        document.getElementById('p23_op2').disabled = true;
+        document.getElementById('p23_op3').disabled = true;
+        document.getElementById('p23_op4').disabled = true;
+        document.getElementById('p8_op1').disabled = false;
+        document.getElementById('p8_op2').disabled = false;
+        document.getElementById('p16_op1').disabled = false;
+        document.getElementById('p16_op2').disabled = false;
+        document.getElementById('p16_op3').disabled = false;
+        document.getElementById('p16_op4').disabled = false;
+        document.getElementById('p17_op1').disabled = false;
+        document.getElementById('p17_op2').disabled = false;
+        document.getElementById('p17_op3').disabled = false;
+        document.getElementById('p18_op1').disabled = false;
+        document.getElementById('p18_op2').disabled = false;
+        document.getElementById('p18_op3').disabled = false;
+        document.getElementById('p18_op4').disabled = false;
+    }
+
+
+}
+
+function genderF() {
+    if (document.getElementById('generoF').checked) {
+        document.getElementById('p8_op1').disabled = true;
+        document.getElementById('p8_op2').disabled = true;
+        document.getElementById('p16_op1').disabled = true;
+        document.getElementById('p16_op2').disabled = true;
+        document.getElementById('p16_op3').disabled = true;
+        document.getElementById('p16_op4').disabled = true;
+        document.getElementById('p17_op1').disabled = true;
+        document.getElementById('p17_op2').disabled = true;
+        document.getElementById('p17_op3').disabled = true;
+        document.getElementById('p18_op1').disabled = true;
+        document.getElementById('p18_op2').disabled = true;
+        document.getElementById('p18_op3').disabled = true;
+        document.getElementById('p18_op4').disabled = true;
+        document.getElementById('p23_op1').disabled = false;
+        document.getElementById('p23_op2').disabled = false;
+        document.getElementById('p23_op3').disabled = false;
+        document.getElementById('p23_op4').disabled = false;
+
+    }
+
+}
