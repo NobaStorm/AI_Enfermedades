@@ -15,7 +15,7 @@ localStorage.setItem("enfermVal", JSON.stringify(enfermVal));
 
 var umbral85 = [4.5475, 4.675, 4.42, 4.08, 2.4225, 7.055, 5.5675, 5.78, 3.2725, 4.2925];
 
-var enfermedades = ["Cáncer de Prostáta", "Cáncer de Vejiga", "Cistitis", "Calculos Renales", "Agrandamiento de Prostáta", "Orquitis", "Infección Renal", "Prostatitis", "Uretritis", "Cervisitis"];
+var enfermedades = ["Cáncer de Próstata", "Cáncer de Vejiga", "Cistitis", "Calculos Renales", "Agrandamiento de Prostáta", "Orquitis", "Infección Renal", "Prostatitis", "Uretritis", "Cervisitis"];
 
 var recomendaciones = ["Si se diagnostica temprano, muchos cánceres de próstata crecen lentamente y no causan ningún problema de salud a los hombres que los tienen. Le recomendamos acudir con su Médico para realizarse una prueba y tener un diagnóstico certero.",
     "El cáncer de vejiga es una enfermedad fuerte, le recomendamos acudir lo más pronto posible con su médico para realizar los exámenes pertinentes para un diagnóstico confiable y de ser necesario comience con un tratamiento.",
